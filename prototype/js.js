@@ -6,8 +6,8 @@
 		this.tank = tank;
 		this.power = power;
 		this.fuelConsumption = ((this.tank * 0.75 + this.weight)/this.power)/6;
-		this.maxSpeed = ((this.tank * 0.75 + this.weight) / this.power)*4;
-		this.accelerationTime = (this.tank * 0.75 + this.weight)/this.power;
+		this.maxSpeed = ( this.power/ (this.tank * 0.75 + this.weight))*300;
+		this.accelerationTime = this.power/(this.tank * 0.75 + this.weight) * 1000;
 		
 
 	}
